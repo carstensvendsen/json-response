@@ -1,7 +1,8 @@
 {
-    "title": "Borgen",
+    "episode_title": "Borgen",
     "length": 1233,
     "hasPoster": true,
+    "badBool": "false",
     "attributes": {
         "ratings": 4.2,
         "images": [
