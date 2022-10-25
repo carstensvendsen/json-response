@@ -96,28 +96,18 @@ Returnerer det fulde datasæt, hver gang, så vi ikke skal diffe på data.
                     "assist": "N. Bendtner"
                 }
             ],
-            "statistics": {
-                "home": [
-                    {
-                        "type": "Total Shots",
-                        "value": 2
-                    },
-                    {
-                        "type": "Fouls",
-                        "value": 4
-                    }
-                ],
-                "away": [
-                    {
-                        "type": "Total Shots",
-                        "value": 2
-                    },
-                    {
-                        "type": "Fouls",
-                        "value": 4
-                    }
-                ]
-            },
+            "statistics": [
+                {
+                    "type": "Totale skud",
+                    "home": "2",
+                    "away": "10"
+                },
+                {
+                    "type": "Boldbesiddelse",
+                    "home": "40%",
+                    "away": "60%"
+                }
+            ],
             "lineups": {
                 "home": {
                     "formation": "4-3-3",
@@ -241,29 +231,27 @@ Returnerer det fulde datasæt, hver gang, så vi ikke skal diffe på data.
     Navn på spiller
 - ### assist `string optional`
     Navn på spiller som lavede assist
-### statistics `object`
-- ### home `array`
-    - ### type `string`
-        Hver type er unik og kommer max 1 gang
-    
-            Shots on Goal
-            Shots off Goal
-            Shots insidebox
-            Shots outsidebox
-            Total Shots
-            Blocked Shots
-            Fouls
-            Corner Kicks
-            Offsides
-            Ball Possession
-            Yellow Cards
-            Red Cards
-            Goalkeeper Saves
-            Total passes
-            Passes accurate
-    - ### value `int`
-- ### away `array`
-    Samme som home
+### statistics `array`
+- ### type `string`
+    Hver type er unik og kommer max 1 gang. Bliver oversat til dansk fra backend
+
+        Shots on Goal
+        Shots off Goal
+        Shots insidebox
+        Shots outsidebox
+        Total Shots
+        Blocked Shots
+        Fouls
+        Corner Kicks
+        Offsides
+        Ball Possession
+        Yellow Cards
+        Red Cards
+        Goalkeeper Saves
+        Total passes
+        Passes accurate
+    - ### home `string`
+    - ### away `string`
 ### lineups `object`
 - ### home `array`
     - ### formation `string`
